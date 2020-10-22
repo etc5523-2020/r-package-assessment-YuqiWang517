@@ -1,0 +1,58 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# covidpkg
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of covidpkg is to provide dataset and functions to visualising and analysing the number of COVID19 cases
+ and deaths in Australia and Canada.
+
+## Installation
+
+You can install the released version of covidpkg from [CRAN](https://CRAN.R-project.org) with:
+
+``` r
+install.packages("covidpkg")
+```
+
+And the development version from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("etc5523-2020/r-package-assessment-YuqiWang517")
+```
+## Example
+
+This is a basic example which shows you one of the plot for COVID19:
+
+```{r example}
+library(covidpkg)
+library(tidyverse)
+library(lubridate)
+covid <- read.csv("inst/app/data/WHO-COVID-19-global-data.csv") %>%
+  filter(Country %in%c("Canada", "Australia"))
+covid1 <- covid %>% mutate(date= as.Date(Date_reported, format = "%Y-%m-%d")) %>%
+  filter(Country %in% c("Canada", "Australia")) %>%
+  filter(date > "2020-03-01" & date < "2020-05-01") %>%
+  select(date, Country, cases = New_cases) %>%
+  group_by(Country)
+ggplot(data = covid1, aes(x = date, y = cases, color = Country)) +
+      geom_line() +
+      ggtitle("Covid19 new cases in Australia and Canada, 01 March 2020 - 01 May 2020") 
+```
+
+

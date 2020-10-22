@@ -7,7 +7,7 @@ Authors@R:
            role = c("aut", "cre"),
            email = "ywan0454@student.monash.edu")
 Description: Provide dataset and functions to visualising and analysing the number of COVID19 cases
- and deaths in Australia and Canada..
+ and deaths in Australia and Canada.
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
