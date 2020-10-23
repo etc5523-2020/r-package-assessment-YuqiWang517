@@ -1,5 +1,5 @@
 Package: covidpkg
-Title: Compare
+Title: Comparing the the number of COVID19 cases between Australia and Canada
 Version: 0.0.0.9000
 Authors@R: 
     person(given = "Yuqi",
