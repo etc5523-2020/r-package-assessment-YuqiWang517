@@ -1,0 +1,45 @@
+---
+title: "Compare covid19 in Australia and Canada"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Compare covid19 in Australia and Canada}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(covidpkg)
+```
+
+### How to launch the app
+
+This app can be lauched just by typing "launch_app()" in your console.
+
+### What the app does
+
+This app contains a table, a plotly gragh and a dygragh.  
+A dygragh based on comparing the number of cases and deaths in Australia and Canada from 1st March 2020 to 7th October 2020.    
+A plotly graph focus on comparing the everyday new cases from March to May for analysing the COVID19 in this two countries at the beginning of the epidemic.   
+Tables with selected data range and plots with selected country can be changed from users.  
+
+### Guidelines
+
+You can install the released version of covidpkg from [CRAN](https://CRAN.R-project.org) with:
+
+``` r
+install.packages("covidpkg")
+```
+
+And the development version from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("etc5523-2020/r-package-assessment-YuqiWang517")
+```
