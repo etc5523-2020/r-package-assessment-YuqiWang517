@@ -5,6 +5,8 @@
 
 <!-- badges: start -->
 
+[![R build
+status](https://github.com/etc5523-2020/r-package-assessment-YuqiWang517/workflows/R-CMD-check/badge.svg)](https://github.com/etc5523-2020/r-package-assessment-YuqiWang517/actions)
 <!-- badges: end -->
 
 The goal of covidpkg is to provide dataset and functions to visualising
