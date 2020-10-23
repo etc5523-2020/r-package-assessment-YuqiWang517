@@ -30,4 +30,4 @@ Suggests:
     knitr,
     rmarkdown,
     testthat
-VignetteBuilder: knitr
+VignetteBuilder: utils

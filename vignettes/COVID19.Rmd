@@ -2,7 +2,7 @@
 title: "Shiny App for Comparing covid19 in Australia and Canada"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Compare covid19 in Australia and Canada}
+  %\VignetteIndexEntry{Shiny App for Comparing covid19 in Australia and Canada}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
