@@ -1,4 +1,5 @@
-#' Title
+#' this is the input function for shiny
+#' 
 #'library(magrittr)
 #' @param Country 
 #'
