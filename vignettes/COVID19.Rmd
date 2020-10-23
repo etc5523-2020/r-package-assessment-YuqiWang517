@@ -1,5 +1,5 @@
 ---
-title: "Compare covid19 in Australia and Canada"
+title: "Shiny App for Comparing covid19 in Australia and Canada"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{Compare covid19 in Australia and Canada}
@@ -10,7 +10,8 @@ vignette: >
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
-  comment = "#>"
+  comment = "#>",
+  check_title = FALSE
 )
 ```
 
@@ -19,17 +20,6 @@ library(covidpkg)
 ```
 
 ### How to launch the app
-
-This app can be lauched just by typing "launch_app()" in your console.
-
-### What the app does
-
-This app contains a table, a plotly gragh and a dygragh.  
-A dygragh based on comparing the number of cases and deaths in Australia and Canada from 1st March 2020 to 7th October 2020.    
-A plotly graph focus on comparing the everyday new cases from March to May for analysing the COVID19 in this two countries at the beginning of the epidemic.   
-Tables with selected data range and plots with selected country can be changed from users.  
-
-### Guidelines
 
 You can install the released version of covidpkg from [CRAN](https://CRAN.R-project.org) with:
 
@@ -43,3 +33,18 @@ And the development version from [GitHub](https://github.com/) with:
 # install.packages("devtools")
 devtools::install_github("etc5523-2020/r-package-assessment-YuqiWang517")
 ```
+This app can be lauched just by typing "launch_app()" in your console after install this package.
+
+### What the app does
+
+This app contains a table, a plotly gragh and a dygragh.  
+- A dygragh based on comparing the number of cases and deaths in Australia and Canada from 1st March 2020 to 7th October 2020.    
+- A plotly graph focus on comparing the everyday new cases from March to May for analysing the COVID19 in this two countries at the beginning of the epidemic(from 1st March 2020 to 1st May 2020.).   
+- Tables with selected data range and plots with selected country can be changed from users.  
+
+### Guidelines
+
+This shiny app visualized and analyzed the COVID19 epidemic in Australia and Canada from begining(1st March 2020 ) until 7th October 2020. Use some user input choose buttons help users uderstanding the comparation of thes two countries.  
+- Table use: the table of total cases and deaths can be selected to displayed by different time range you want to explore.  
+- A plotly graph use: use ggplotly to visualize and analyze the number of everyday new cases in Australia and Canada from March to May and click certain day to show the details data on the plot.  
+- A dygraph plot use: use dygraphs to visualize the total number of cases and deaths from 1st March 2020 to 7th October 2020 by slide the cursor on the curve to see the details.  
