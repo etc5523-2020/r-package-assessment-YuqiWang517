@@ -1,16 +1,34 @@
-Package: yourPkg
-Title: What the Package Does (One Line, Title Case)
+Package: covidpkg
+Title: Comparing the the number of COVID19 cases between Australia and Canada
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Yuqi",
+           family = "Wang",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to
-    pick a license
+           email = "ywan0454@student.monash.edu")
+Description: Provide dataset and functions to visualising and analysing the number of COVID19 cases
+ and deaths in Australia and Canada.
+License: GPL-3
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
+Depends: 
+    R (>= 2.10),
+    tidyverse
+Imports: 
+    shiny,
+    readr,
+    plotly,
+    hrbrthemes,
+    kableExtra,
+    lubridate,
+    dplyr,
+    xts,
+    shinydashboard
+Suggests: 
+    knitr,
+    rmarkdown,
+    testthat
+VignetteBuilder: knitr
+
