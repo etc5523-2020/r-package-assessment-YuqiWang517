@@ -5,13 +5,13 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Compare covid19 in Australia and Canada • covidpkg</title>
+<title>Shiny App for Comparing covid19 in Australia and Canada • covidpkg</title>
 <!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><!-- Bootstrap --><link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.4.0/cerulean/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script><!-- bootstrap-toc --><link rel="stylesheet" href="../bootstrap-toc.css">
 <script src="../bootstrap-toc.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
 <!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="../pkgdown.css" rel="stylesheet">
-<script src="../pkgdown.js"></script><meta property="og:title" content="Compare covid19 in Australia and Canada">
+<script src="../pkgdown.js"></script><meta property="og:title" content="Shiny App for Comparing covid19 in Australia and Canada">
 <meta property="og:description" content="covidpkg">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -54,7 +54,7 @@
   </a>
   <ul class="dropdown-menu" role="menu">
 <li>
-      <a href="../articles/COVID19.html">Compare covid19 in Australia and Canada</a>
+      <a href="../articles/COVID19.html">Shiny App for Comparing covid19 in Australia and Canada</a>
     </li>
   </ul>
 </li>
@@ -73,7 +73,7 @@
 <script src="COVID19_files/anchor-sections-1.0/anchor-sections.js"></script><div class="row">
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
-      <h1 data-toc-skip>Compare covid19 in Australia and Canada</h1>
+      <h1 data-toc-skip>Shiny App for Comparing covid19 in Australia and Canada</h1>
             
       
       
@@ -97,19 +97,6 @@
 <div id="how-to-launch-the-app" class="section level3">
 <h3 class="hasAnchor">
 <a href="#how-to-launch-the-app" class="anchor"></a>How to launch the app</h3>
-<p>This app can be lauched just by typing “launch_app()” in your console.</p>
-</div>
-<div id="what-the-app-does" class="section level3">
-<h3 class="hasAnchor">
-<a href="#what-the-app-does" class="anchor"></a>What the app does</h3>
-<p>This app contains a table, a plotly gragh and a dygragh.<br>
-A dygragh based on comparing the number of cases and deaths in Australia and Canada from 1st March 2020 to 7th October 2020.<br>
-A plotly graph focus on comparing the everyday new cases from March to May for analysing the COVID19 in this two countries at the beginning of the epidemic.<br>
-Tables with selected data range and plots with selected country can be changed from users.</p>
-</div>
-<div id="guidelines" class="section level3">
-<h3 class="hasAnchor">
-<a href="#guidelines" class="anchor"></a>Guidelines</h3>
 <p>You can install the released version of covidpkg from <a href="https://CRAN.R-project.org">CRAN</a> with:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit">
 <span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span><span class="op">(</span><span class="st">"covidpkg"</span><span class="op">)</span></pre></div>
@@ -117,6 +104,23 @@ Tables with selected data range and plots with selected country can be changed f
 <div class="sourceCode" id="cb3"><pre class="downlit">
 <span class="co"># install.packages("devtools")</span>
 <span class="fu">devtools</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"etc5523-2020/r-package-assessment-YuqiWang517"</span><span class="op">)</span></pre></div>
+<p>This app can be lauched just by typing “launch_app()” in your console after install this package.</p>
+</div>
+<div id="what-the-app-does" class="section level3">
+<h3 class="hasAnchor">
+<a href="#what-the-app-does" class="anchor"></a>What the app does</h3>
+<p>This app contains a table, a plotly gragh and a dygragh.<br>
+- A dygragh based on comparing the number of cases and deaths in Australia and Canada from 1st March 2020 to 7th October 2020.<br>
+- A plotly graph focus on comparing the everyday new cases from March to May for analysing the COVID19 in this two countries at the beginning of the epidemic(from 1st March 2020 to 1st May 2020.).<br>
+- Tables with selected data range and plots with selected country can be changed from users.</p>
+</div>
+<div id="guidelines" class="section level3">
+<h3 class="hasAnchor">
+<a href="#guidelines" class="anchor"></a>Guidelines</h3>
+<p>This shiny app visualized and analyzed the COVID19 epidemic in Australia and Canada from begining(1st March 2020 ) until 7th October 2020. Use some user input choose buttons help users uderstanding the comparation of thes two countries.<br>
+- Table use: the table of total cases and deaths can be selected to displayed by different time range you want to explore.<br>
+- A plotly graph use: use ggplotly to visualize and analyze the number of everyday new cases in Australia and Canada from March to May and click certain day to show the details data on the plot.<br>
+- A dygraph plot use: use dygraphs to visualize the total number of cases and deaths from 1st March 2020 to 7th October 2020 by slide the cursor on the curve to see the details.</p>
 </div>
   </div>
 
